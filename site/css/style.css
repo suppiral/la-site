@@ -131,6 +131,7 @@ a:hover, .current a {
 	margin: auto;
 	margin-bottom: 20px;
 	border: 1px solid black;
+	text-align: center;
 }
 
 .nav li {
