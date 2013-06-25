@@ -105,6 +105,27 @@ h1 {
 	margin-bottom: 10px;
 }
 
+h2 {
+	font-size: 20px;
+	font-weight: normal;
+	margin-top: 0px;
+	font-family: arial;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: normal;
+	margin-top: 0px;
+	font-family: arial;
+	margin-bottom: 5px;
+}
+
+dd {
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
 a:visited {
 	color: rgb(10,102,222);
 }
@@ -137,6 +158,21 @@ a:hover, .current a {
 .nav li {
 	padding: 10px;
 }
+.nav a {
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+a {
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	-ms-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
 
 .content {
 	float: right;
@@ -162,10 +198,12 @@ a:hover, .current a {
   padding-bottom: 1px;
   margin: 30px;
   border-top: 1px solid #999;
-  font-family: courier new;
+  font-family: 'courier new';
   font-size: 18px;
   
  }
+ 
+ /* faq */
  #faq {
 	margin-top: 0px;
 	margin-left: 20px;
@@ -173,26 +211,6 @@ a:hover, .current a {
 
 #faq li {
 	list-style-type: none;
-}
-h2 {
-	font-size: 20px;
-	font-weight: normal;
-	margin-top: 0px;
-	font-family: arial;
-}
-
-h3 {
-	font-size: 18px;
-	font-weight: normal;
-	margin-top: 0px;
-	font-family: arial;
-	margin-bottom: 5px;
-}
-
-dd {
-	margin-left: 20px;
-	margin-top: 5px;
-	margin-bottom: 20px;
 }
 
 #faq a {
@@ -203,7 +221,53 @@ dd {
 } 
 #faq a:hover {
 	color: rgb(100,60,10);
-}     
+}
+
+.faq dt a {
+	color: rgb(130,60,10);
+}
+.faq dd {
+	color: #444;
+}
+/* ------------ */
+
+.form p {
+	margin-bottom: 10px;
+	margin-left: 5px;
+}
+
+.antispam { display: none; }
+
+input[type=text], textarea {
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	display: block;
+	color: #444;
+
+  border: 1px solid rgba(10,102,222,0.5);
+  padding: 3px;
+  background: rgb(249,249,251);
+}
+label {
+	font-family: arial, sans-serif;
+	font-size: 16px;
+}
+
+input[type=text] {
+	width: 250px;
+}
+text-area {
+	width: 400px;
+	height: 200px;
+}
+
+input[type=text]:focus, textarea:focus {
+	background-color: #fff;
+	outline: none;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.2) inset;
+}
+  
   /* button using css-tricks */
   
 .button {
@@ -228,6 +292,12 @@ dd {
    font-weight: bold;
    text-decoration: none;
    vertical-align: middle;
+   
+   	-webkit-transition: all 0s ease;
+	-moz-transition: all 0s ease;
+	-o-transition: all 0s ease;
+	-ms-transition: all 0s ease;
+	transition: all 0s ease;
 }
 
 
@@ -235,6 +305,7 @@ dd {
    border-top-color: #123465;
    background: #123465;
    color: #ffffff;
+  
 }
 .button:active {
    border-top-color: #0c6fe8;
