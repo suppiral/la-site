@@ -15,5 +15,24 @@ if(isset($_POST['url']) && $_POST['url'] == ''){
  
 ?>
  
-<h1>Thank you for your submission, <?php echo $_POST['name'] ?>. </h1>
-<p>your email has been sent.</p>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Little Adventure - WhiteStar Game</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="main clearfix">
+		<section class="content">
+			<h1>Thank you for your submission, <?php echo $_POST['name'] ?>. </h1>
+			<p>your email has been sent.</p>
+			<p><a href="../index.html" title="to Little Adventure home">go back</a></p>
+		</content>						
+	</div>
+</div>
+</body>
+</html>
