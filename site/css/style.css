@@ -73,6 +73,9 @@ td { vertical-align: top; }
    Your Styles Here
    ========================================================================== */
 
+   @import url(http://fonts.googleapis.com/css?family=Ubuntu|Kaushan+Script|Berkshire+Swash|Prosto+One);
+   
+   
 body {
 	line-height: 1.4;
 	background: rgb(18, 92, 141); /* rgb(140, 205, 245); /* #ddd; /* rgb(50,172,222); */
@@ -106,17 +109,17 @@ h1 {
 }
 
 h2 {
-	font-size: 20px;
+	font-family: 'Ubuntu', consolas;
+	font-size: 24px;
 	font-weight: normal;
 	margin-top: 0px;
-	font-family: arial;
 }
 
 h3 {
-	font-size: 18px;
+	font-family: 'Ubuntu', consolas;
+	font-size: 20px;
 	font-weight: normal;
 	margin-top: 0px;
-	font-family: arial;
 	margin-bottom: 5px;
 }
 
@@ -144,6 +147,8 @@ a:hover, .current a {
 	float:left;
 	width: 150px;
 	padding: 0px 20px;
+	font-family: arial;
+	font-size: 16px;
 
 }
 .nav ul {
@@ -182,10 +187,14 @@ a {
 }
 
 .content p {
-	font-family: consolas;
-	font-size: 18px;
 	text-align: justify;
 	margin-top: 0px;
+	margin-left: 10px;
+}
+.stylish_font p {
+	font-family: 'Ubuntu', cursive;
+	font-size: 18px;
+	text-align: justify;
 }
 
 .download_button {
@@ -200,9 +209,26 @@ a {
   border-top: 1px solid #999;
   font-family: 'courier new';
   font-size: 18px;
-  
  }
  
+ .f-right {
+	float:right;
+	clear:both;
+ }
+ .f-left {
+	float:left;
+	clear:both;
+}
+ .overf {
+overflow: hidden;
+}
+ 
+ .imglink {
+	border: 0px solid #AAA;
+	margin: 10px;
+	padding: 2px;
+	margin-top: 0px;
+ }
  /* faq */
  #faq {
 	margin-top: 0px;
@@ -235,7 +261,6 @@ a {
 	margin-bottom: 10px;
 	margin-left: 5px;
 }
-
 .antispam { display: none; }
 
 input[type=text], textarea {
