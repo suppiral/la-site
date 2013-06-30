@@ -73,7 +73,7 @@ td { vertical-align: top; }
    Your Styles Here
    ========================================================================== */
 
-   @import url(http://fonts.googleapis.com/css?family=Ubuntu|Kaushan+Script|Berkshire+Swash|Prosto+One);
+   @import url(http://fonts.googleapis.com/css?family=Ubuntu);
    
    
 body {
@@ -121,6 +121,11 @@ h3 {
 	font-weight: normal;
 	margin-top: 0px;
 	margin-bottom: 5px;
+}
+
+ul {
+	list-style: none;
+
 }
 
 dd {
@@ -207,28 +212,66 @@ a {
   padding-bottom: 1px;
   margin: 30px;
   border-top: 1px solid #999;
-  font-family: 'courier new';
+  font-family: Consolas;
   font-size: 18px;
  }
  
- .f-right {
-	float:right;
-	clear:both;
- }
- .f-left {
-	float:left;
-	clear:both;
+.f-right, .f-left {
+ 	margin: 10px;
+	padding: 2px;
 }
- .overf {
+ 
+.f-right {
+	float:right;
+ }
+.f-left {
+	float:left;
+}
+.piclist {
+	margin: 5px;
+	padding: 1px;
+}
+
+.overf {
 overflow: hidden;
 }
  
- .imglink {
-	border: 0px solid #AAA;
-	margin: 10px;
-	padding: 2px;
-	margin-top: 0px;
+.imglink {
+	border: 1px solid rgba(10,102,222,0.5);
  }
+.imglink:hover {
+	border: 1px solid rgb(18, 92, 141);
+}
+.thumb {
+	width: 200px;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+.thumb:hover {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+ 
+.scrshots {
+	margin-left: 30px;
+	padding-bottom: 30px;
+}
+ 
+ dt {
+	font-family: 'Ubuntu', cursive;
+	font-size: 115%;
+	margin-bottom: 10px;
+}
+section {
+	margin-bottom: 20px;
+}
+
  /* faq */
  #faq {
 	margin-top: 0px;
